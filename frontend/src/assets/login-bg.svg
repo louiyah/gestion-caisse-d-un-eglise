@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="ciel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a67d4"/><stop offset=".6" stop-color="#7fb2f0"/><stop offset="1" stop-color="#cfe3fb"/>
+    </linearGradient>
+    <linearGradient id="mur" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9dcc6"/><stop offset=".55" stop-color="#f7eedd"/><stop offset="1" stop-color="#d9c9ae"/>
+    </linearGradient>
+    <linearGradient id="toit" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a5260"/><stop offset="1" stop-color="#2c313b"/></linearGradient>
+    <linearGradient id="sol" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7a9a5a"/><stop offset="1" stop-color="#4f6e3d"/></linearGradient>
+    <filter id="flou"><feGaussianBlur stdDeviation="14"/></filter>
+    <g id="nuage"><ellipse cx="0" cy="0" rx="90" ry="26"/><ellipse cx="-50" cy="8" rx="60" ry="22"/><ellipse cx="55" cy="10" rx="70" ry="24"/><ellipse cx="10" cy="-18" rx="55" ry="24"/></g>
+    <path id="fen" d="M-9 34 V-4 a9 9 0 0 1 18 0 V34 Z"/>
+  </defs>
+  <rect width="1672" height="941" fill="url(#ciel)"/>
+  <g fill="#fff" opacity=".8" filter="url(#flou)">
+    <use href="#nuage" transform="translate(900 150) scale(1.7)"/>
+    <use href="#nuage" transform="translate(1180 330) scale(1.3)"/>
+    <use href="#nuage" transform="translate(560 420) scale(1.1)"/>
+  </g>
+
+  <!-- sol et route -->
+  <rect y="700" width="1672" height="241" fill="url(#sol)"/>
+  <path d="M0 880 Q500 820 1100 850 T1672 830 V941 H0 Z" fill="#c9c3b8"/>
+  <path d="M0 905 Q500 850 1100 880 T1672 862" fill="none" stroke="#e8e3d8" stroke-width="6" opacity=".7"/>
+
+  <g transform="translate(-250 0)">
+  <!-- arbres -->
+  <g>
+    <rect x="1010" y="640" width="10" height="80" fill="#5a4630"/>
+    <ellipse cx="1015" cy="610" rx="40" ry="70" fill="#35693a"/>
+  </g>
+
+  <!-- nef -->
+  <path d="M740 560 L930 505 L1120 560 V720 H740 Z" fill="url(#mur)"/>
+  <path d="M722 565 L930 495 L1138 565 L1130 578 L930 514 L730 578 Z" fill="url(#toit)"/>
+  <g fill="#6d7b94" opacity=".95">
+    <use href="#fen" transform="translate(790 590)"/><use href="#fen" transform="translate(850 590)"/>
+    <use href="#fen" transform="translate(1010 590)"/><use href="#fen" transform="translate(1070 590)"/>
+  </g>
+
+  <!-- tour et clocher -->
+  <rect x="865" y="400" width="130" height="320" fill="url(#mur)"/>
+  <rect x="855" y="395" width="150" height="10" fill="#cdbca0"/>
+  <path d="M865 400 L930 190 L995 400 Z" fill="url(#toit)"/>
+  <rect x="928" y="108" width="4" height="86" fill="#3a3f49"/><rect x="915" y="125" width="30" height="4" fill="#3a3f49"/>
+  <path d="M912 470 v-46 a18 18 0 0 1 36 0 v46 Z" fill="#41506b"/>
+  <path d="M904 470 H956" stroke="#cdbca0" stroke-width="6"/>
+  <circle cx="930" cy="560" r="14" fill="#f4ead6" stroke="#cdbca0" stroke-width="4"/>
+
+  <!-- porte et marches -->
+  <path d="M898 720 V650 a32 32 0 0 1 64 0 V720 Z" fill="#6a3b25"/><path d="M930 618 V720" stroke="#4a2616" stroke-width="3"/>
+  <rect x="870" y="720" width="120" height="10" fill="#d8ccb8"/><rect x="858" y="730" width="144" height="10" fill="#cfc2ac"/><rect x="846" y="740" width="168" height="10" fill="#c5b79f"/>
+
+  <!-- buissons -->
+  <g fill="#4b7f45"><ellipse cx="800" cy="728" rx="44" ry="20"/><ellipse cx="1060" cy="730" rx="48" ry="21"/><ellipse cx="760" cy="740" rx="30" ry="14" fill="#a05a78"/><ellipse cx="1100" cy="742" rx="30" ry="14" fill="#c8a24a"/></g>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+node_modules/
+dist/
+release/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+*.db
+.secret
+.pytest_cache/
+.mypy_cache/
